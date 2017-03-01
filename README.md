@@ -1,11 +1,26 @@
 # Searchable-Dictionary
-Searchable Dictionary
+Searchable Dictionary that allows prefix search
+
 Functionality:
 
-1. Inserting a word and its definition
+* Inserting a word and its definition
 
-2. Retrieving all words that start with a given prefix
+* Retrieving all words that start with a given prefix
 
-3. Retrieving the definition of a given word
+* Retrieving the definition of a given word
 
-4. Deleting a word from the dictionary
+* Deleting a word from the dictionary
+
+Assumptions:
+
+* Assumes only alphabetic characters (but can be easily extended to a bigger set)
+* Stores words as lowercase
+
+Solution:
+
+* The underlying data structure is actually a digital search tree (Trie) that allows prefix search.
+
+Limitation of the initial solution:
+
+* Doesn't handle exceptions/errors properly yet (however that can be added with little effort)
+* Test cases not implemented yet
